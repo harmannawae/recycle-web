@@ -319,6 +319,7 @@ require("connection.php");
                     <th scope="col">ตำแหน่ง</th>
                     <th scope="col">แก้ไข</th>
                     <th scope="col">ลบ</th>
+                    
                 </tr>
             </thead>
             <tfoot>
@@ -375,6 +376,12 @@ require("connection.php");
     <!--------------------------------------------------------------- -->
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <button type="button" class="btn btn-light"><a href="add_form.php">เพิ่มสมาชิก</button>
+    </center>
     <br>
     <br>
     <br>

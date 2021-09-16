@@ -3,24 +3,27 @@
 require("connection.php");
 
 //add new data form to mysql
-if (isset($_POST['fullname'])) {
+if (isset($_POST['user_name'])) {
 
-    $fullname = $_POST['fullname'];
+    $fullname = $_POST['user_lastname'];
 
-    $address = $_POST['address'];
+    $address = $_POST['user_phone'];
 
-    $salary = $_POST['salary'];
+    $salary = $_POST['user_address'];
 
-    $birthday = $_POST['birthday'];
+    $birthday = $_POST['username'];
 
-    $sql = "INSERT INTO user ( id , fullname , address, salary, birthday)
+    $birthday = $_POST['password'];
+
+
+    $sql = "INSERT INTO user ( user_id , user_name , user_latname, user_phone, user_address, username, password, user_order)
         
-        VALUES (null , '$fullname','$address','$salary','$birthday' )";
+        VALUES (null , '$user_name','$user_lastname','$user_phone','$user_address','$username','$password','null' )";
 
     if (mysqli_query($conn, $sql)) {
 
         echo "New record created successfully";
-        echo "<br><a href='indax.php'>Bact To All Employees Page</a>";
+        echo "<br><a href='member-get.php'>Bact To All Employees Page</a>";
     } else {
 
         echo "Error:" . $sql . "<br>" . mysqli_error($conn);
