@@ -359,23 +359,16 @@ require("connection.php");
             </tbody>
         </table>
     </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-
-
-
-    <!--------------------------------------------------------------- -->
     <br>
     <br>
     <br>
     <br>
     <br>
     <center>
-    <button type="button" class="btn btn-light"><a href="newspaper-add.php">เพิ่มข้อมูลข่าวสาร</button> <br>
+        <button type="button" class="btn btn-light"><a href="newspaper-add.php">เพิ่มข้อมูลข่าวสาร</button> <br><br>
         <button type="button" class="btn btn-light"><a href="home.php">ย้อนกลับ</button>
     </center>
 
 </body>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </html>

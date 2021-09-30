@@ -109,7 +109,7 @@ if (isset($_GET['delete_id'])) {
 }
 
 //เพิ่มข้อมูลประเภทขยะ
-if (isset($_POST['product'])) {
+if (isset($_POST['product-add'])) {
 
     $p_name = $_POST['p_name'];
 

@@ -17,7 +17,6 @@
 
          <lable> หัวข้อข่าว : </lable><br><input type="text" name="n_name"><br>
 
-         
          <lable> เนื้อหาข่าว : </lable><br><textarea type="text" name="n_content" rows="5" cols="30"></textarea><br>
 
            

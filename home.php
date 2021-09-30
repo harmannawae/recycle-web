@@ -54,8 +54,12 @@ session_start();
 
                         <center>
                             <h1>
-                                <font color=“#57b846”>recycle-web</font>
+                                <font color=“#57b846”>RECYCLE-WEB</font>
                             </h1>
+
+                            <h5>
+                                <font color=“#57b846”>ระบบนัดหมายซื้อขายขยะ</font>
+                            </h5>
                         </center>
 
                     </div>

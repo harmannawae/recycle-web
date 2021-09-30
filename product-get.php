@@ -313,7 +313,7 @@ require("connection.php");
                 <tr>
                     <th scope="col">ลำดับ</th>
                     <th scope="col">ประเภท</th>
-                    <th scope="col">ราคา</th>
+                    <th scope="col">ราคาต่อกิโลกรัม</th>
                     <th scope="col">แก้ไข</th>
                 </tr>
             </thead>
@@ -363,6 +363,7 @@ require("connection.php");
     <br>
     <br>
     <center>
+        <button type="button" class="btn btn-light"><a href="product-add.php">เพิ่มรายการขยะ</button> <br><br>
         <button type="button" class="btn btn-light"><a href="home.php">ย้อนกลับ</button>
     </center>
 
