@@ -3,30 +3,46 @@
 require("connection.php");
 
 //add new data form to mysql
-if (isset($_POST['user_name'])) {
-
-    $fullname = $_POST['user_lastname'];
-
-    $address = $_POST['user_phone'];
-
-    $salary = $_POST['user_address'];
-
-    $birthday = $_POST['username'];
-
-    $birthday = $_POST['password'];
-
-
-    $sql = "INSERT INTO user ( user_id , user_name , user_latname, user_phone, user_address, username, password, user_order)
+if(isset($_POST['user_name'])){
         
-        VALUES (null , '$user_name','$user_lastname','$user_phone','$user_address','$username','$password','null' )";
+    $user_name = $_POST['user_name'];
 
-    if (mysqli_query($conn, $sql)) {
+    $user_lastname = $_POST['user_lastname'];
+
+    $user_phone = $_POST['user_phone'];
+
+    $user_address = $_POST['user_address'];
+
+    $username = $_POST['username'];
+
+    $password = $_POST['password'];
+
+    $user_type = $_POST['user_type'];
+
+    $user_order = $_POST['user_order'];
+
+$sql = "INSERT INTO user ( user_id, user_name, user_lastname, user_phone, user_address, username, password, user_type, user_order)
+    
+    VALUES (
+        null,
+    '$user_name',
+    '$user_lastname',
+    '$user_phone',
+    '$user_address',
+    '$username',
+    '$password',
+    '$user_type',
+    '$user_order')";
+
+    if (mysqli_query($conn,$sql)) {
 
         echo "New record created successfully";
-        echo "<br><a href='member-get.php'>Bact To All Employees Page</a>";
-    } else {
+        echo "<br><a href='user-get.php'>Bact To All Employees Page</a>";
+
+    }else{
 
         echo "Error:" . $sql . "<br>" . mysqli_error($conn);
+
     }
 }
 
@@ -176,7 +192,7 @@ if (isset($_GET['delete_product_id'])) {
 
 
 //เพิ่มข้อมูลข่าวสาร
-if (isset($_POST['newspaper'])) {
+if (isset($_POST['newspaper_add'])) {
 
     $n_title = $_POST['n_title'];
 
@@ -199,7 +215,7 @@ if (isset($_POST['newspaper'])) {
         null , 
         '$n_title',
         '$n_name',
-        '$n_conent'
+        '$n_content'
     )";
 
     if (mysqli_query($conn, $sql)) {
@@ -213,7 +229,7 @@ if (isset($_POST['newspaper'])) {
 }
 
 
-//แก้ไข้ข้อproduct
+//แก้ไข้ข่าว
 
 if (isset($_POST['edit_newspaper_id'])) {
 
@@ -246,7 +262,7 @@ if (isset($_POST['edit_newspaper_id'])) {
 }
 
 
-//ลบข้อมูลproduct
+//ลบข้อมูลข่าว
 if (isset($_GET['delete_newspaper_id'])) {
 
     $id = $_GET['delete_newspaper_id'];

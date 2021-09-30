@@ -372,6 +372,7 @@ require("connection.php");
     <br>
     <br>
     <center>
+    <button type="button" class="btn btn-light"><a href="newspaper-add.php">เพิ่มข้อมูลข่าวสาร</button> <br>
         <button type="button" class="btn btn-light"><a href="home.php">ย้อนกลับ</button>
     </center>
 

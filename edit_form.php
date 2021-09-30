@@ -36,7 +36,8 @@ if (isset($_GET['id'])) {
                             <legend>ข้อมูลผู้ใช้:</legend>
 
                             <lable>ชื่อ :</lable><br>
-                            <input type="text" name="edit_user_name" required value="<?php echo $result['user_name'] ?>"><br>
+                            <input type="text" 
+                            ame="edit_user_name" required value="<?php echo $result['user_name'] ?>"><br>
                             <br>
                             <br>
 
